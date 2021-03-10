@@ -46,7 +46,6 @@
         <if test="name !=null and name !=''">
             name=#{name},
         </if>
-
     </sql>
 
 
