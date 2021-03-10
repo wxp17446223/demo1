@@ -1,0 +1,20 @@
+package com.example;
+
+
+import org.mybatis.spring.annotation.MapperScan;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
+
+@SpringBootApplication
+@MapperScan("com.example.mapper")
+@EnableTransactionManagement//开始事务管理
+public class Demo1Application {
+    public static void main(String[] args) {
+//改端口 System.setProperty("server.port","80");
+        SpringApplication.run(Demo1Application.class, args);
+
+    }
+}
+
+

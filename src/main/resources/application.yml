@@ -1,0 +1,18 @@
+server:
+  port: 80
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/gytl?serverTimezone=GMT%2b8
+    username: wxp
+    password: 123456
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+  mapper-locations: classpath:com/example/mapper/*.xml #ÍÕ·åÃüÃû
+
+logging:
+  level:
+    root: info
+    com.example: trace
+
